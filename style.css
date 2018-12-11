@@ -1,0 +1,123 @@
+body {
+  padding: 0;
+  margin: 0; }
+
+ul li {
+  text-align: center;
+  display: inline-block;
+  list-style: none;
+  float: right; }
+  ul li a {
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: black; }
+    ul li a:hover {
+      color: #ccc; }
+
+.row:after {
+  content: "";
+  clear: both;
+  display: block; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.gallery {
+  margin: 5vh auto;
+  overflow: auto; }
+
+.photo {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  max-height: 30vh; }
+  .photo:last-of-type {
+    margin-right: 0; }
+  .photo img {
+    width: 100%;
+    height: auto; }
+
+.main {
+  height: 100vh;
+  background: url("http://cache.marriott.com/Images/HWS_Messages/Meetings_In_New_York.jpg");
+  background-size: cover;
+  padding: 5%;
+  margin: auto;
+  background-color: #ecf0f1; }
+  .main h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 8vh;
+    text-shadow: 2px 2px black;
+    text-align: center; }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.map {
+  width: 100%;
+  height: auto;
+  overflow: auto; }
+
+[class*="col-"] {
+  float: left;
+  padding: 15px; }
+
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  a {
+    padding: 10px; }
+
+  .photo {
+    margin-right: 5%; } }
+@media (max-width: 767px) {
+  .row {
+    display: block; }
+
+  ul li {
+    display: block;
+    text-align: center;
+    float: none;
+    width: 100%; }
+
+  .gallery {
+    float: none; } }
